@@ -8,7 +8,7 @@ const steps = [
     },
     {
         title: 'Informe',
-        description: 'Seus dados cadastrais de forma segura e rápida.',
+        description: 'Seus dados cadastrais de forma rápida e segura.',
         icon: '/icons/pen-b.svg',
     },
     {
@@ -18,7 +18,7 @@ const steps = [
     },
     {
         title: 'Depósito',
-        description: 'O dinheiro do seu crédito pessoal online é depositado diretamente na sua conta bancária em até 24 horas após a aprovação.',
+        description: 'O dinheiro do seu crédito pessoal on-line é depositado diretamente na sua conta bancária em até 24 horas após assinatura do contrato digital',
         icon: '/icons/money-f.svg',
     },
 ]
