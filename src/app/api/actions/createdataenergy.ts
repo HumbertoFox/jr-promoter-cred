@@ -16,5 +16,5 @@ export async function createDataEnergy(state: FormStateEnergy, formData: FormDat
 
     const { name, cpf, dateofbirth, zipcode, phone } = validatedFields.data;
 
-    redirect(`https://wa.me/81997933386?text=nome: ${name}%0Acpf: ${cpf}%0Adata de nascimento: ${dateofbirth}%0ACEP: ${zipcode}%0Atelefone: ${phone}`);
+    redirect(`https://wa.me/5581997933386?text=nome: ${name}%0Acpf: ${cpf}%0Adata de nascimento: ${dateofbirth}%0ACEP: ${zipcode}%0Atelefone: ${phone}`);
 }

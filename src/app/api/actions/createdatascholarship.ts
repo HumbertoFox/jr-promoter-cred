@@ -16,5 +16,5 @@ export async function createDataScholarship(state: FormStateScholarship, formDat
 
     const { name, cpf, nis, bemefitvalue, phone } = validatedFields.data;
 
-    redirect(`https://wa.me/81997933386?text=nome: ${name}%0Acpf: ${cpf}%0ANIS: ${nis}%0AValor do Benefício: ${bemefitvalue}%0Atelefone: ${phone}`)
+    redirect(`https://wa.me/5581997933386?text=nome: ${name}%0Acpf: ${cpf}%0ANIS: ${nis}%0AValor do Benefício: ${bemefitvalue}%0Atelefone: ${phone}`)
 }
