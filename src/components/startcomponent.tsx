@@ -7,8 +7,11 @@ import gsap from 'gsap';
 
 export default function StartComponent() {
     const buttonTextRef = useRef(null);
+    const cardRef = useRef(null);
 
     useEffect(() => {
+        const card = cardRef.current;
+
         gsap.to(buttonTextRef.current, {
             scale: 1.05,
             duration: 0.5,
@@ -16,11 +19,23 @@ export default function StartComponent() {
             yoyo: true,
             ease: 'power1.inOut',
         });
+        gsap.fromTo(card, {
+            opacity: 0,
+            x: -700
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+            ease: 'power1.out'
+        });
     }, []);
     return (
         <section className='min-w-full bg-cover bg-no-repeat bg-center lg:bg-[url("/bg/bg-home.jpg")] flex justify-center p-8'>
             <div className="w-1/4 lg:block hidden" />
-            <Card className="w-full max-w-xl flex flex-col justify-between text-green-700 lg:text-2xl text-lg font-bree text-center lg:text-start bg-white p-5">
+            <Card
+                ref={cardRef}
+                className="w-full max-w-xl flex flex-col justify-between text-green-700 lg:text-2xl text-lg font-bree text-center lg:text-start bg-white p-5 opacity-0"
+            >
                 <p>1. Quer um empréstimo de quanto?</p>
 
                 <p className="text-center">
