@@ -141,6 +141,8 @@ export default function FormWhatsappFgtsComponent() {
                 {state?.errors?.phone && <InputError message={state?.errors?.phone} />}
             </div>
 
+            <p className="space-y-6 text-xs font-sans">* Preenchimento obrigatório</p>
+
             <Button
                 type="submit"
                 tabIndex={4}

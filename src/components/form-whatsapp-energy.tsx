@@ -169,11 +169,11 @@ export default function FormWhatsappEnergyComponent() {
 
             <div className="grid gap-2">
                 <Label
-                htmlFor="zipcode"
-                className="lg:text-sm text-xs"
+                    htmlFor="zipcode"
+                    className="lg:text-sm text-xs"
                 >
                     CEP *
-                    </Label>
+                </Label>
                 <Input
                     id="zipcode"
                     name="zipcode"
@@ -193,8 +193,8 @@ export default function FormWhatsappEnergyComponent() {
 
             <div className="grid gap-2">
                 <Label
-                htmlFor="phone"
-                className="lg:text-sm text-xs"
+                    htmlFor="phone"
+                    className="lg:text-sm text-xs"
                 >
                     Telefone celular *
                 </Label>
@@ -212,6 +212,8 @@ export default function FormWhatsappEnergyComponent() {
                 />
                 {state?.errors?.phone && <InputError message={state?.errors?.phone} />}
             </div>
+
+            <p className="space-y-6 text-xs font-sans">* Preenchimento obrigatório</p>
 
             <Button
                 type="submit"
