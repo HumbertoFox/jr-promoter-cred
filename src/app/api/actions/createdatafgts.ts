@@ -14,5 +14,5 @@ export async function createDataFgts(state: FormStateFgts, formData: FormData): 
 
     const { name, cpf, phone } = validatedFields.data;
 
-    redirect(`https://wa.me/5581997933386?text=nome: ${name}%0Acpf: ${cpf}%0Atelefone: ${phone}`);
+    redirect(`https://wa.me/${process.env.MY_NUMBER_PHONE}?text=nome: ${name}%0Acpf: ${cpf}%0Atelefone: ${phone}`);
 }
